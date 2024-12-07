@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AAB8194A-7B1E-3233-A98D-A09DACE56156}</ProjectGuid>
+    <RootNamespace>QT3DModelViewer</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.22621.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;" Label="Configuration">
+    <PlatformToolset>v143</PlatformToolset>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>QT3DModelViewer</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;" Label="Configuration">
+    <PlatformToolset>v143</PlatformToolset>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>QT3DModelViewer</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">QT3DModelViewer</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</IgnoreImportLibrary>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">QT3DModelViewer</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;Assimp\include;C:\Qt\6.5.3\include;C:\Qt\6.5.3\include\QtOpenGLWidgets;C:\Qt\6.5.3\include\QtOpenGL;C:\Qt\6.5.3\include\QtWidgets;C:\Qt\6.5.3\include\QtGui;C:\Qt\6.5.3\include\QtCore;debug;.;C:\Qt\6.5.3\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -permissive- -Zc:__cplusplus -Zc:externConstexpr -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DEPRECATED_WARNINGS;QT_OPENGLWIDGETS_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\Users\qijun\GitHub\QT-3D-Model-Viewer\QT3DModelViewer\Assimp\libx64\Debug\assimp-vc142-mtd.lib;C:\Qt\6.5.3\lib\Qt6OpenGLWidgetsd.lib;C:\Qt\6.5.3\lib\Qt6OpenGLd.lib;C:\Qt\6.5.3\lib\Qt6Widgetsd.lib;C:\Qt\6.5.3\lib\Qt6Guid.lib;C:\Qt\6.5.3\lib\Qt6Cored.lib;C:\Qt\6.5.3\lib\Qt6EntryPointd.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\qijun\GitHub\QT-3D-Model-Viewer\QT3DModelViewer\Assimp\libx64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\QT3DModelViewer.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DEPRECATED_WARNINGS;QT_OPENGLWIDGETS_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;Assimp\include;C:\Qt\6.5.3\include;C:\Qt\6.5.3\include\QtOpenGLWidgets;C:\Qt\6.5.3\include\QtOpenGL;C:\Qt\6.5.3\include\QtWidgets;C:\Qt\6.5.3\include\QtGui;C:\Qt\6.5.3\include\QtCore;release;.;C:\Qt\6.5.3\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -permissive- -Zc:__cplusplus -Zc:externConstexpr -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DEPRECATED_WARNINGS;NDEBUG;QT_NO_DEBUG;QT_OPENGLWIDGETS_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName></ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\Users\qijun\GitHub\QT-3D-Model-Viewer\QT3DModelViewer\Assimp\libx64\MinSizeRel\assimp-vc142-mt.lib;C:\Qt\6.5.3\lib\Qt6OpenGLWidgets.lib;C:\Qt\6.5.3\lib\Qt6OpenGL.lib;C:\Qt\6.5.3\lib\Qt6Widgets.lib;C:\Qt\6.5.3\lib\Qt6Gui.lib;C:\Qt\6.5.3\lib\Qt6Core.lib;C:\Qt\6.5.3\lib\Qt6EntryPoint.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\qijun\GitHub\QT-3D-Model-Viewer\QT3DModelViewer\Assimp\libx64\MinSizeRel;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\QT3DModelViewer.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DEPRECATED_WARNINGS;NDEBUG;QT_NO_DEBUG;QT_OPENGLWIDGETS_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="component.cpp" />
+    <ClCompile Include="gameobject.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="mesh.cpp" />
+    <ClCompile Include="myopenglwidget.cpp" />
+    <ClCompile Include="scene.cpp" />
+    <ClCompile Include="transform.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="component.h" />
+    <ClInclude Include="gameobject.h" />
+    <CustomBuild Include="mainwindow.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">mainwindow.h;debug\moc_predefs.h;C:\Qt\6.5.3\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\6.5.3\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/Users/qijun/GitHub/QT-3D-Model-Viewer/QT3DModelViewer/debug/moc_predefs.h -IC:/Qt/6.5.3/mkspecs/win32-msvc -IC:/Users/qijun/GitHub/QT-3D-Model-Viewer/QT3DModelViewer -IC:/Users/qijun/GitHub/QT-3D-Model-Viewer/QT3DModelViewer/Assimp/include -IC:/Qt/6.5.3/include -IC:/Qt/6.5.3/include/QtOpenGLWidgets -IC:/Qt/6.5.3/include/QtOpenGL -IC:/Qt/6.5.3/include/QtWidgets -IC:/Qt/6.5.3/include/QtGui -IC:/Qt/6.5.3/include/QtCore -I&quot;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include&quot; -I&quot;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\ATLMFC\include&quot; -I&quot;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt&quot; mainwindow.h -o debug\moc_mainwindow.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC mainwindow.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_mainwindow.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">mainwindow.h;release\moc_predefs.h;C:\Qt\6.5.3\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\6.5.3\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DQT_DEPRECATED_WARNINGS -DNDEBUG -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/Users/qijun/GitHub/QT-3D-Model-Viewer/QT3DModelViewer/release/moc_predefs.h -IC:/Qt/6.5.3/mkspecs/win32-msvc -IC:/Users/qijun/GitHub/QT-3D-Model-Viewer/QT3DModelViewer -IC:/Users/qijun/GitHub/QT-3D-Model-Viewer/QT3DModelViewer/Assimp/include -IC:/Qt/6.5.3/include -IC:/Qt/6.5.3/include/QtOpenGLWidgets -IC:/Qt/6.5.3/include/QtOpenGL -IC:/Qt/6.5.3/include/QtWidgets -IC:/Qt/6.5.3/include/QtGui -IC:/Qt/6.5.3/include/QtCore -I&quot;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include&quot; -I&quot;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\ATLMFC\include&quot; -I&quot;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt&quot; mainwindow.h -o release\moc_mainwindow.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC mainwindow.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_mainwindow.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="mesh.h" />
+    <CustomBuild Include="myopenglwidget.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">myopenglwidget.h;debug\moc_predefs.h;C:\Qt\6.5.3\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\6.5.3\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/Users/qijun/GitHub/QT-3D-Model-Viewer/QT3DModelViewer/debug/moc_predefs.h -IC:/Qt/6.5.3/mkspecs/win32-msvc -IC:/Users/qijun/GitHub/QT-3D-Model-Viewer/QT3DModelViewer -IC:/Users/qijun/GitHub/QT-3D-Model-Viewer/QT3DModelViewer/Assimp/include -IC:/Qt/6.5.3/include -IC:/Qt/6.5.3/include/QtOpenGLWidgets -IC:/Qt/6.5.3/include/QtOpenGL -IC:/Qt/6.5.3/include/QtWidgets -IC:/Qt/6.5.3/include/QtGui -IC:/Qt/6.5.3/include/QtCore -I&quot;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include&quot; -I&quot;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\ATLMFC\include&quot; -I&quot;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt&quot; myopenglwidget.h -o debug\moc_myopenglwidget.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC myopenglwidget.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_myopenglwidget.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">myopenglwidget.h;release\moc_predefs.h;C:\Qt\6.5.3\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\6.5.3\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DQT_DEPRECATED_WARNINGS -DNDEBUG -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/Users/qijun/GitHub/QT-3D-Model-Viewer/QT3DModelViewer/release/moc_predefs.h -IC:/Qt/6.5.3/mkspecs/win32-msvc -IC:/Users/qijun/GitHub/QT-3D-Model-Viewer/QT3DModelViewer -IC:/Users/qijun/GitHub/QT-3D-Model-Viewer/QT3DModelViewer/Assimp/include -IC:/Qt/6.5.3/include -IC:/Qt/6.5.3/include/QtOpenGLWidgets -IC:/Qt/6.5.3/include/QtOpenGL -IC:/Qt/6.5.3/include/QtWidgets -IC:/Qt/6.5.3/include/QtGui -IC:/Qt/6.5.3/include/QtCore -I&quot;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include&quot; -I&quot;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\ATLMFC\include&quot; -I&quot;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt&quot; myopenglwidget.h -o release\moc_myopenglwidget.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC myopenglwidget.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_myopenglwidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="scene.h" />
+    <ClInclude Include="transform.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_myopenglwidget.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_myopenglwidget.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\6.5.3\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">cl -BxC:\Qt\6.5.3\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -permissive- -Zc:__cplusplus -Zc:externConstexpr -Zi -MDd -std:c++17 -utf-8 -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E C:\Qt\6.5.3\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;debug\moc_predefs.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">Generate moc_predefs.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_predefs.h;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\6.5.3\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">cl -BxC:\Qt\6.5.3\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -permissive- -Zc:__cplusplus -Zc:externConstexpr -O2 -MD -std:c++17 -utf-8 -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E C:\Qt\6.5.3\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;release\moc_predefs.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">Generate moc_predefs.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClCompile Include="debug\qrc_icons.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qrc_icons.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_shaders.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qrc_shaders.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_skyboxes.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qrc_skyboxes.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="ui_inspector.h" />
+    <ClInclude Include="ui_mainwindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="inspector.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">inspector.ui;C:\Qt\6.5.3\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\6.5.3\bin\uic.exe inspector.ui -o ui_inspector.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC inspector.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ui_inspector.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">inspector.ui;C:\Qt\6.5.3\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\6.5.3\bin\uic.exe inspector.ui -o ui_inspector.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC inspector.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ui_inspector.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">mainwindow.ui;C:\Qt\6.5.3\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\6.5.3\bin\uic.exe mainwindow.ui -o ui_mainwindow.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC mainwindow.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ui_mainwindow.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">mainwindow.ui;C:\Qt\6.5.3\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\6.5.3\bin\uic.exe mainwindow.ui -o ui_mainwindow.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC mainwindow.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ui_mainwindow.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Badge-multiply.png" />
+    <None Include="Resources\Icons\Disquette.png" />
+    <None Include="Resources\Icons\Doc.png" />
+    <None Include="Resources\Icons\Document-new.png" />
+    <None Include="Resources\Icons\Folder.png" />
+    <None Include="Resources\Icons\Info.png" />
+    <None Include="Resources\Shaders\default.frag" />
+    <None Include="Resources\Shaders\default.vert" />
+    <None Include="Resources\Shaders\deferred_light.frag" />
+    <None Include="Resources\Shaders\deferred_light.vert" />
+    <None Include="Resources\Shaders\deferred_shading.frag" />
+    <None Include="Resources\Shaders\deferred_shading.vert" />
+    <None Include="Resources\Shaders\framebuffertoscreen.frag" />
+    <None Include="Resources\Shaders\framebuffertoscreen.fsh" />
+    <None Include="Resources\Shaders\framebuffertoscreen.vert" />
+    <None Include="Resources\Shaders\framebuffertoscreen.vsh" />
+    <None Include="Resources\Shaders\graphic_buffer.frag" />
+    <None Include="Resources\Shaders\graphic_buffer.vert" />
+    <CustomBuild Include="Resources\Icons\icons.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">Resources\Icons\icons.qrc;C:\Qt\6.5.3\bin\rcc.exe;Resources\Icons\Info.png;Resources\Icons\Folder.png;Resources\Icons\Doc.png;Resources\Icons\Document-new.png;Resources\Icons\Disquette.png;Resources\Icons\Badge-multiply.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\6.5.3\bin\rcc.exe -name icons --no-zstd Resources\Icons\icons.qrc -o debug\qrc_icons.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">RCC Resources/Icons/icons.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\qrc_icons.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">Resources\Icons\icons.qrc;C:\Qt\6.5.3\bin\rcc.exe;Resources\Icons\Info.png;Resources\Icons\Folder.png;Resources\Icons\Doc.png;Resources\Icons\Document-new.png;Resources\Icons\Disquette.png;Resources\Icons\Badge-multiply.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\6.5.3\bin\rcc.exe -name icons --no-zstd Resources\Icons\icons.qrc -o release\qrc_icons.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">RCC Resources/Icons/icons.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\qrc_icons.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="Resources\Skyboxes\sor_lake1\lake1_bk.JPG" />
+    <None Include="Resources\Skyboxes\sor_lake1\lake1_dn.JPG" />
+    <None Include="Resources\Skyboxes\sor_lake1\lake1_ft.JPG" />
+    <None Include="Resources\Skyboxes\sor_lake1\lake1_lf.JPG" />
+    <None Include="Resources\Skyboxes\sor_lake1\lake1_rt.JPG" />
+    <None Include="Resources\Skyboxes\sor_lake1\lake1_up.JPG" />
+    <None Include="Resources\Skyboxes\sor_land\land_bk.JPG" />
+    <None Include="Resources\Skyboxes\sor_land\land_dn.JPG" />
+    <None Include="Resources\Skyboxes\sor_land\land_ft.JPG" />
+    <None Include="Resources\Skyboxes\sor_land\land_lf.JPG" />
+    <None Include="Resources\Skyboxes\sor_land\land_rt.JPG" />
+    <None Include="Resources\Skyboxes\sor_land\land_up.JPG" />
+    <CustomBuild Include="Resources\Shaders\shaders.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">Resources\Shaders\shaders.qrc;C:\Qt\6.5.3\bin\rcc.exe;Resources\Shaders\framebuffertoscreen.frag;Resources\Shaders\framebuffertoscreen.vert;Resources\Shaders\singlecolor.frag;Resources\Shaders\skybox.vert;Resources\Shaders\deferred_shading.frag;Resources\Shaders\graphic_buffer.frag;Resources\Shaders\deferred_shading.vert;Resources\Shaders\deferred_light.vert;Resources\Shaders\graphic_buffer.vert;Resources\Shaders\skybox.frag;Resources\Shaders\framebuffertoscreen.vsh;Resources\Shaders\default.vert;Resources\Shaders\singlecolor.vert;Resources\Shaders\default.frag;Resources\Shaders\deferred_light.frag;Resources\Shaders\framebuffertoscreen.fsh;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\6.5.3\bin\rcc.exe -name shaders --no-zstd Resources\Shaders\shaders.qrc -o debug\qrc_shaders.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">RCC Resources/Shaders/shaders.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\qrc_shaders.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">Resources\Shaders\shaders.qrc;C:\Qt\6.5.3\bin\rcc.exe;Resources\Shaders\framebuffertoscreen.frag;Resources\Shaders\framebuffertoscreen.vert;Resources\Shaders\singlecolor.frag;Resources\Shaders\skybox.vert;Resources\Shaders\deferred_shading.frag;Resources\Shaders\graphic_buffer.frag;Resources\Shaders\deferred_shading.vert;Resources\Shaders\deferred_light.vert;Resources\Shaders\graphic_buffer.vert;Resources\Shaders\skybox.frag;Resources\Shaders\framebuffertoscreen.vsh;Resources\Shaders\default.vert;Resources\Shaders\singlecolor.vert;Resources\Shaders\default.frag;Resources\Shaders\deferred_light.frag;Resources\Shaders\framebuffertoscreen.fsh;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\6.5.3\bin\rcc.exe -name shaders --no-zstd Resources\Shaders\shaders.qrc -o release\qrc_shaders.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">RCC Resources/Shaders/shaders.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\qrc_shaders.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="Resources\Shaders\singlecolor.frag" />
+    <None Include="Resources\Shaders\singlecolor.vert" />
+    <None Include="Resources\Shaders\skybox.frag" />
+    <None Include="Resources\Shaders\skybox.vert" />
+    <CustomBuild Include="Resources\Skyboxes\skyboxes.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">Resources\Skyboxes\skyboxes.qrc;C:\Qt\6.5.3\bin\rcc.exe;Resources\Skyboxes\sor_lake1\lake1_dn.JPG;Resources\Skyboxes\sor_lake1\lake1_up.JPG;Resources\Skyboxes\sor_lake1\lake1_lf.JPG;Resources\Skyboxes\sor_lake1\lake1_bk.JPG;Resources\Skyboxes\sor_lake1\lake1_rt.JPG;Resources\Skyboxes\sor_lake1\lake1_ft.JPG;Resources\Skyboxes\sor_land\land_bk.JPG;Resources\Skyboxes\sor_land\land_dn.JPG;Resources\Skyboxes\sor_land\land_rt.JPG;Resources\Skyboxes\sor_land\land_lf.JPG;Resources\Skyboxes\sor_land\land_up.JPG;Resources\Skyboxes\sor_land\land_ft.JPG;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\6.5.3\bin\rcc.exe -name skyboxes --no-zstd Resources\Skyboxes\skyboxes.qrc -o debug\qrc_skyboxes.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">RCC Resources/Skyboxes/skyboxes.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\qrc_skyboxes.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">Resources\Skyboxes\skyboxes.qrc;C:\Qt\6.5.3\bin\rcc.exe;Resources\Skyboxes\sor_lake1\lake1_dn.JPG;Resources\Skyboxes\sor_lake1\lake1_up.JPG;Resources\Skyboxes\sor_lake1\lake1_lf.JPG;Resources\Skyboxes\sor_lake1\lake1_bk.JPG;Resources\Skyboxes\sor_lake1\lake1_rt.JPG;Resources\Skyboxes\sor_lake1\lake1_ft.JPG;Resources\Skyboxes\sor_land\land_bk.JPG;Resources\Skyboxes\sor_land\land_dn.JPG;Resources\Skyboxes\sor_land\land_rt.JPG;Resources\Skyboxes\sor_land\land_lf.JPG;Resources\Skyboxes\sor_land\land_up.JPG;Resources\Skyboxes\sor_land\land_ft.JPG;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\6.5.3\bin\rcc.exe -name skyboxes --no-zstd Resources\Skyboxes\skyboxes.qrc -o release\qrc_skyboxes.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">RCC Resources/Skyboxes/skyboxes.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\qrc_skyboxes.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

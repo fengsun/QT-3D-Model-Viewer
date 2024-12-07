@@ -48,3 +48,8 @@ QT3DModelViewer/.qtc_clangd/
 
 #Build folders
 /Builds/
+QT3DModelViewer/debug/
+QT3DModelViewer/release/
+
+# Visual Studio
+.vs

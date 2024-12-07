@@ -201,25 +201,25 @@ void MyOpenGLWidget::DrawMesh(Mesh* mesh, SHADER_TYPE shader)
                 unsigned int diffuseNr  = 1;
                 unsigned int specularNr = 1;
 
-                for(int i = 0; i < sub->textures.size(); i++)
-                {
-                    glActiveTexture(GL_TEXTURE0 + static_cast<unsigned int>(i));
-                    QString number;
-                    QString name = sub->textures[i].type;
-                    if(name == "texture_diffuse") number = QString(diffuseNr++);
-                    else if(name == "texture_specular") number = QString(specularNr++);
+                //for(int i = 0; i < sub->textures.size(); i++)
+                //{
+                //    glActiveTexture(GL_TEXTURE0 + static_cast<unsigned int>(i));
+                //    QString number;
+                //    QString name = sub->textures[i].type;
+                //    if(name == "texture_diffuse") number = QString::number(diffuseNr++);
+                //    else if(name == "texture_specular") number = QString::number(specularNr++);
 
-                    program->setUniformValue((name + number).toStdString().c_str(), static_cast<unsigned int>(i));
-                    sub->textures[i].glTexture->bind();
-                }
+                //    program->setUniformValue((name + number).toStdString().c_str(), static_cast<unsigned int>(i));
+                //    sub->textures[i].glTexture->bind();
+                //}
 
                 QOpenGLVertexArrayObject::Binder vaoBinder(&sub->vao);
                 if(sub->num_faces > 0) glDrawElements(GL_TRIANGLES, sub->num_faces * 3, GL_UNSIGNED_INT, nullptr);
                 else glDrawArrays(GL_TRIANGLES, 0, sub->num_vertices);
 
-                for (int i = 0; i < sub->textures.count(); i++)
+                /*for (int i = 0; i < sub->textures.count(); i++)
                     if(sub->textures[i].glTexture != nullptr && sub->textures[i].glTexture->isCreated())
-                        sub->textures[i].glTexture->release();
+                        sub->textures[i].glTexture->release();*/
             }
         }
         break;
@@ -268,8 +268,8 @@ void MyOpenGLWidget::DrawMesh(Mesh* mesh, SHADER_TYPE shader)
                 {
                     QString number;
                     QString name = sub->textures[i].type;
-                    if(name == "texture_diffuse") number = QString(diffuseNr++);
-                    else if(name == "texture_specular") number = QString(specularNr++);
+                    if(name == "texture_diffuse") number = QString::number(diffuseNr++);
+                    else if(name == "texture_specular") number = QString::number(specularNr++);
 
                     glActiveTexture(GL_TEXTURE0 + static_cast<unsigned int>(i));
                     program->setUniformValue((name + number).toStdString().c_str(), static_cast<unsigned int>(i));
@@ -705,12 +705,12 @@ int MyOpenGLWidget::LoadSkyboxes(const QVector<QString> paths)
     QImage negy = QImage(paths[4]).convertToFormat(QImage::Format_RGBA8888);
     QImage negz = QImage(paths[5]).convertToFormat(QImage::Format_RGBA8888);
 
-    if (posx.isNull()) qDebug() << "ERROR::LoadSkyboxes::Invalid posx Path: " << qApp->applicationDirPath() + paths[0] << endl;
-    if (posy.isNull()) qDebug() << "ERROR::LoadSkyboxes::Invalid posy Path: " << qApp->applicationDirPath() + paths[1] << endl;
-    if (posz.isNull()) qDebug() << "ERROR::LoadSkyboxes::Invalid posz Path: " << qApp->applicationDirPath() + paths[2] << endl;
-    if (negx.isNull()) qDebug() << "ERROR::LoadSkyboxes::Invalid negx Path: " << qApp->applicationDirPath() + paths[3] << endl;
-    if (negy.isNull()) qDebug() << "ERROR::LoadSkyboxes::Invalid negy Path: " << qApp->applicationDirPath() + paths[4] << endl;
-    if (negz.isNull()) qDebug() << "ERROR::LoadSkyboxes::Invalid negz Path: " << qApp->applicationDirPath() + paths[5] << endl;
+    if (posx.isNull()) qDebug() << "ERROR::LoadSkyboxes::Invalid posx Path: " << qApp->applicationDirPath() + paths[0] << Qt::endl;
+    if (posy.isNull()) qDebug() << "ERROR::LoadSkyboxes::Invalid posy Path: " << qApp->applicationDirPath() + paths[1] << Qt::endl;
+    if (posz.isNull()) qDebug() << "ERROR::LoadSkyboxes::Invalid posz Path: " << qApp->applicationDirPath() + paths[2] << Qt::endl;
+    if (negx.isNull()) qDebug() << "ERROR::LoadSkyboxes::Invalid negx Path: " << qApp->applicationDirPath() + paths[3] << Qt::endl;
+    if (negy.isNull()) qDebug() << "ERROR::LoadSkyboxes::Invalid negy Path: " << qApp->applicationDirPath() + paths[4] << Qt::endl;
+    if (negz.isNull()) qDebug() << "ERROR::LoadSkyboxes::Invalid negz Path: " << qApp->applicationDirPath() + paths[5] << Qt::endl;
 
     QOpenGLTexture* skybox = new QOpenGLTexture(QOpenGLTexture::TargetCubeMap);
     skybox->create();
@@ -961,6 +961,7 @@ void MyOpenGLWidget::PostProcessDeferredLights()
 
     RenderQuad();
     programs[DEFERRED_SHADING]->release();
+
 
     // copy geometry depth buffer to framebuffer's depth buffer
     glBindFramebuffer(GL_READ_FRAMEBUFFER, fbo);

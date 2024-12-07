@@ -47,7 +47,7 @@ void Mesh::importModel(QString path, MyOpenGLWidget* renderer)
 
     if(!scene || scene->mFlags & AI_SCENE_FLAGS_INCOMPLETE || !scene->mRootNode)
     {
-        qDebug() << "ERROR::ASSIMP::" << import.GetErrorString() << endl;
+        qDebug() << "ERROR::ASSIMP::" << import.GetErrorString() << Qt::endl;
         return;
     }
     bool extension=true;
@@ -55,10 +55,10 @@ void Mesh::importModel(QString path, MyOpenGLWidget* renderer)
     directory = path;
     for (int i = directory.length() - 1; i > 0; i--)
     {
-        if(directory[i] != "/")
+        if(directory[i] != QChar('/'))
         {
             if(!extension)name=directory[i]+name;
-            if(directory[i] == ".") extension=false;
+            if(directory[i] == QChar('.')) extension=false;
             directory.remove(i,1);
         }
         else break;
